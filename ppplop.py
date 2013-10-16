@@ -23,9 +23,12 @@ def create_image(dimx = 520, dimy =520, x=20 ,y=20,name= 'ppplop.png', bg = 'rgb
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Create Colorful Image Placeholders")
+    parser = argparse.ArgumentParser(
+                       description="Create Colorful Image Placeholders")
     parser.add_argument("-n", "--name", 
-                       help="Name given to file that is stored")
+                       help='''Name given to image file that is created stored as 
+                               a png e.g `ppplop -n COW` will save a COW.png in 
+                               working directory ''')
     
     args = parser.parse_args()
     
