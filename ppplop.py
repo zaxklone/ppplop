@@ -43,8 +43,5 @@ def main():
         
         im = create_image( name=im_name)
         print 'Success'
-    else:
-        print 'Failure'
-
 if __name__ == '__main__':
     main()
